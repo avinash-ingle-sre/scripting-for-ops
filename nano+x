@@ -1,0 +1,17 @@
+import os  # ऑपरेटिंग सिस्टमशी बोलण्यासाठी
+
+folder_name = "backup_logs"
+
+print("--- Checking Directory ---")
+
+# चेक करा: फोल्डर आहे का?
+# os.path.exists() हे true किंवा false सांगते
+if os.path.exists(folder_name):
+    print("Folder already exists:", folder_name)
+else:
+    print("Folder not found. Creating it now...")
+    # फोल्डर बनवा (mkdir)
+    os.mkdir(folder_name)
+    print("Success: Folder created!")
+
+print("--- Done ---")
